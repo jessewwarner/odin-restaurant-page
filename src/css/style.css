@@ -60,10 +60,19 @@ body {
 
 .main-wrapper {
     font-size: 2.5rem;
-    background-color: #000000AA;
+    background-color: #00000099;
     color: antiquewhite;
     width: 900px;
     height: 90%;
     padding: 20px;
+    border-radius: 20px;
     text-align: center;
+}
+
+footer {
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.5);
 }
