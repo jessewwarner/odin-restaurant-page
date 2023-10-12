@@ -6,7 +6,7 @@ function createHeader(){
     title.textContent = "Fancy Steakhouse";
 
     const home = document.createElement('div');
-    home.classList.add('tab', 'home');
+    home.classList.add('tab', 'home', 'selected');
     home.textContent = 'Home';
 
     const menu = document.createElement('div');
@@ -40,11 +40,14 @@ function createFooter(){
 
 function createContent(){
     const content = document.createElement('div');
+    const mainWrapper = document.createElement('div');
+    mainWrapper.classList.add('main-wrapper');
     content.id = 'content';
+    content.appendChild(mainWrapper);
     return content;
 }
 
-export function createLandingPage(){
+export default function createLandingPage(){
     document.body.appendChild(createHeader());
     document.body.appendChild(createContent());
     document.body.appendChild(createFooter());

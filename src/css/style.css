@@ -8,13 +8,62 @@ html {
     background: url('/src/images/background.jpg');
 }
 
+header {
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 400px 1fr 400px;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: antiquewhite;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.tabs {
+    display: flex;
+    align-self: flex-end;
+}
+
+.tab {
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 10px 10px 0 0;
+    background-color: #000000;
+}
+
+.tab:hover {
+    background-color: #363636;
+}
+
+.tab.selected {
+    background-color: #e0e0e0;
+    color: black;
+}
+
 body {
     height: 100vh;
     display: grid;
     grid-template-rows: 100px 1fr 60px;
-
 }
 
 #content {
-    font-size: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-wrapper {
+    font-size: 2.5rem;
+    background-color: #000000AA;
+    color: antiquewhite;
+    width: 900px;
+    height: 90%;
+    padding: 20px;
+    text-align: center;
 }
