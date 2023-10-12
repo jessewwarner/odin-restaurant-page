@@ -7,3 +7,14 @@
 html {
     background: url('/src/images/background.jpg');
 }
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr 60px;
+
+}
+
+#content {
+    font-size: 100px;
+}
