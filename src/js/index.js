@@ -2,6 +2,7 @@ import '/src/css/style.css'
 import createLandingPage from './landing';
 import createHomePage from './home';
 import createContactPage from './contact';
+import createMenuPage from './menu';
 
 createLandingPage();
 createHomePage();
@@ -18,7 +19,15 @@ home.onclick = function(){
     });
     home.classList.add('selected');
 };
-//menu.onclick = createMenuPage;
+
+menu.onclick = function(){
+    createMenuPage();
+    tabs.forEach(element => {
+        element.classList.remove('selected');
+    });
+    menu.classList.add('selected');
+};
+
 contact.onclick = function(){
     createContactPage();
     tabs.forEach(element => {

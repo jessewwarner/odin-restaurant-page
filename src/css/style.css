@@ -63,7 +63,7 @@ body {
     background-color: #00000099;
     color: antiquewhite;
     width: 900px;
-    min-height: 90%;
+    height: 90%;
     padding: 20px;
     border-radius: 20px;
     text-align: center;
@@ -72,6 +72,23 @@ body {
 .contact-info {
     text-align: left;
     margin-bottom: 20px;
+}
+
+.recipes {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 300px;
+    align-content: space-evenly;
+    justify-items: center;
+    gap: 20px;
+}
+
+.recipe {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 footer {
